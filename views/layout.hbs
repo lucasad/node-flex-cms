@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Saints Torch - {{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Quattrocento:400' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap-responsive.min.css" />
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--> 
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    {{{ head }}}
+</head>
+<body>
+  <div class="navbar navbar-fixed-top"> 
+    <div class="navbar-inner"> 
+      <div class="container-fluid"> 
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span> 
+        </a> 
+        <h1 id="header">
+          <span>Saint's</span>
+          <span id="logo"> </span>
+          <span>Torch</span>
+        </h1>
+      </div>  
+      <div class="nav-collapse collapse"> 
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Mission</a></li>
+          <li><a href="/">Staff</a></li>
+          <li><a href="/">Submissions</a></li>
+          <li><a href="/">Previous Issues</a></li>
+          <li><a href="/">Saints Nation</a></li>
+        </ul> 
+      </div><!--/.nav-collapse -->
+      {{{navbar}}}
+    </div>
+  </div> 
+  <div class="container-fluid">
+    {{#if edit}}<form method="post">{{/if}}
+    {{{ body }}}
+    {{#if edit}}
+    <input type="submit" class="btn btn-primary"/>
+    </form>{{/if}}
+    <hr class="soften" />
+    <footer>
+      © Copyright 2012 | Creative Writing | St. Helena High School | 1401 Grayson Avenue | St. Helena, CA 94574
+    </footer>
+  </div>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

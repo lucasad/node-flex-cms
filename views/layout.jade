@@ -1,0 +1,60 @@
+!!!
+html(xmlns="http://www.w3.org/1999/xhtml")
+  head
+    meta(charset="utf-8")
+    title
+      | Saints Torch - #{locals.title}
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href='http://fonts.googleapis.com/css?family=Quattrocento:400', rel='stylesheet', type="text/css")
+    link(rel="stylesheet", type="text/css", href="/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", type="text/css", href="/stylesheets/style.css")
+    link(rel="stylesheet", type="text/css", href="/bootstrap/css/bootstrap-responsive.min.css")
+    //if lt IE 9
+      script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+     
+    script(src="http://code.jquery.com/jquery-latest.js")
+    if locals.head
+      !{head}
+    block head
+  body
+    div.navbar.navbar-fixed-top
+      div.navbar-inner
+        div.container-fluid
+          a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          h1#header
+            span Saint's
+            span#logo
+            span Torch
+        div.nav-collapse.collapse
+          ul.nav
+            li
+              a(href="/") Home
+            li
+              a(href="/") Mission
+            li
+              a(href="/") Staff
+            li
+              a(href="/") Submissions
+            li
+              a(href="/") Previous Issues
+            li
+              a(href="/") Saints Nation
+        if locals.navbar
+          #{navbar}
+
+    div.container-fluid
+      if locals.edit
+        <form method="post">
+
+      block content
+    
+      if locals.edit
+        input.btn.btn-primary(type="submit")
+        </form>
+      hr.soften
+      footer
+        © Copyright 2012 | Creative Writing | St. Helena High School | 1401 Grayson Avenue | St. Helena, CA 94574
+      script(src="/bootstrap/js/bootstrap.min.js")

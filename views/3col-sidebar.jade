@@ -1,0 +1,18 @@
+extends layout
+block content
+  div.row-fluid
+    div.span3
+      div.well
+        !{sidebar}
+
+    div.span9
+      div.hero-unit
+        h1 !{ hero }
+
+      div.row-fluid
+        div.span4
+          !{ left }
+        div.span4
+          !{ center }
+        div.span4
+          !{ right }

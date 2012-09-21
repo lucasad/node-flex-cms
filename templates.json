@@ -1,0 +1,24 @@
+{
+	"3col-sidebar":
+	{
+		"name": "Three Column with Hero and Sidebar",
+		"properties":
+		{
+			"sidebar": "html",
+			"hero": "text",
+			"left": "html",
+			"center": "html",
+			"right": "html"
+		}
+	},
+	"default":
+	{
+		"name": "The default layout",
+		"properties":
+		{
+			"sidebar": "html",
+			"hero": "html",
+			"body": "html"
+		}
+	}
+}

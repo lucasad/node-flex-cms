@@ -1,8 +1,42 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  /*min-height: 740px;*/
+  background: #D7D7D7;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#F0F0F0), to(#BEBEBE));
+  background: -webkit-radial-gradient(#F0F0F0, #BEBEBE);
+  background: -moz-radial-gradient(#F0F0F0, #BEBEBE);
+  background: -ms-radial-gradient(#F0F0F0, #BEBEBE);
+  background: -o-radial-gradient(#F0F0F0, #BEBEBE);
+  background: radial-gradient;
+}
+#header {
+  font-size: 3em;
+  font-family: 'Quattrocento', serif;
+  margin: 0;
+  display: inline;
+  font-weight: normal;
+}
+#logo {
+  height: 48px;
+  width: 48px;
+  background-image: url('/images/tiki-torch.png');
+  display: inline-block;
+}
+footer {
+  text-align: center;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Quattrocento', serif
 }
 
-a {
-  color: #00B7FF;
+.toolbar {
+  background: #F2F2F2;
+  background: -moz-linear-gradient(top, whiteSmoke 0%, #DDD 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,whiteSmoke), color-stop(100%,#DDD));
+  background: -webkit-linear-gradient(top, whiteSmoke 0%,#DDD 100%);
+  background: -o-linear-gradient(top, whiteSmoke 0%,#DDD 100%);
+  background: -ms-linear-gradient(top, whiteSmoke 0%,#DDD 100%);
+  background: linear-gradient(top, whiteSmoke 0%,#DDD 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='whiteSmoke', endColorstr='#DDD',GradientType=0 );
 }

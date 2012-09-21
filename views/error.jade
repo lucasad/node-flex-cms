@@ -1,0 +1,11 @@
+extends layout
+block content
+  div.row-fluid
+    div.span16
+      div.hero-unit
+        h2
+          | Error - #{locals.title}
+  div.row-fluid
+    div.span16
+        pre
+          !{locals.error}

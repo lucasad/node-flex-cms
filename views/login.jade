@@ -1,0 +1,27 @@
+extend layout
+block content
+  div.row
+    div.span2
+    div.span8(style="background:white;border-radius:5px")
+      form(method="post",style="border:1px solid").form-horizontal
+          h2(style="padding-left:50px").page-header Login
+
+          if locals.referer
+            input(type="hidden",name="referer") #{referer}
+          else
+            input(type="hidden",name="referer") /
+
+          div.control-group
+            label(for="username").control-label Username:
+            div.controls
+              input(type="text",name="username",placeholder="user@example.com")
+
+          div.control-group
+            lable(for="passwd").control-label Password:
+            div.controls
+              input(type="password",name="passwd",placeholder="password")
+
+          div.form-actions
+            button(type="submit").btn.btn-primary
+              | Login
+    div.span2

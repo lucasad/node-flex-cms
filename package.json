@@ -9,6 +9,11 @@
     "express": "3.0.0rc4",
     "jade": "*",
     "mongodb": "*",
-    "bcrypt": "*"
+    "bcrypt": "*",
+    "consolidate": "*"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm":  "1.1.x"
   }
 }

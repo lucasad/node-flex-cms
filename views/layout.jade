@@ -3,7 +3,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
   head
     meta(charset="utf-8")
     title
-      | Saints Torch - #{locals.title}
+      | #{locals.site.name} - #{locals.title}
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(href='http://fonts.googleapis.com/css?family=Quattrocento:400', rel='stylesheet', type="text/css")
     link(rel="stylesheet", type="text/css", href="/bootstrap/css/bootstrap.min.css")
@@ -42,8 +42,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
               a(href="/") Previous Issues
             li
               a(href="/") Saints Nation
-        if locals.navbar
-          #{navbar}
+        !{locals.site.navbar}
 
     div.container-fluid
       if locals.edit
@@ -56,5 +55,5 @@ html(xmlns="http://www.w3.org/1999/xhtml")
         </form>
       hr.soften
       footer
-        © Copyright 2012 | Creative Writing | St. Helena High School | 1401 Grayson Avenue | St. Helena, CA 94574
+        !{locals.site.footer}
       script(src="/bootstrap/js/bootstrap.min.js")
